@@ -1,6 +1,7 @@
 # MQTT-MaraX
 
-It is important to know when the coffee generator is sufficiently heated for extraction. Additionally, one doesn't want to get up, so the whole setup needs to be wireless.
+It is important to know when the coffee generator is sufficiently heated for extraction. Additionally, one doesn't want to get up, so the whole setup needs to be wireless. 
+The temperature is measured using an ESP8266 and sent to an MQTT server. The analog device is also an ESP and retrieves the data from the MQTT server.
 ![PXL_20230408_190545692](https://github.com/zierroff/MQTT-MaraX/assets/62383514/facb346e-c6da-4266-a8fd-34ff4da62c74)
 
 
@@ -11,11 +12,9 @@ First i want to thank:
 * [marax_timer](https://github.com/alexrus/marax_timer)
 * https://www.reddit.com/r/Coffee/comments/hfsvep/data_visualisation_lelit_marax_mod/
 
-During the heating phase, it can look like this:
+## 
 
-The temperature is read using an ESP8266/ESP32 and sent to an MQTT server. The software for the...
-
-Power supply:
+## Power supply:
 In the old building where the machine is supposed to be placed, power outlets are scarce. Therefore, I am using the one built into the machine.
 
 An ESP requires either 3.3V or 5V as a power supply. Caution: The 5V available at the MaraX control unit should NOT be used!
