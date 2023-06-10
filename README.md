@@ -1,9 +1,8 @@
 # MQTT-MaraX
 
 It is important to know when the coffee generator is sufficiently heated for extraction. Additionally, one doesn't want to get up, so the whole setup needs to be wireless. 
-The temperature is read using an ESP8266 and sent to an MQTT server. The analog device is also an Wifi enabled ESP and retrieves the data from the MQTT server.
+The temperature is read using an ESP8266 and sent to an MQTT server. In my case a Raspi with a docker mosquitto. The analog device is also an Wifi enabled ESP and retrieves the data from the MQTT server.
 ![PXL_20230408_190545692](https://github.com/zierroff/MQTT-MaraX/assets/62383514/facb346e-c6da-4266-a8fd-34ff4da62c74)
-
 
 ## Resources for the project
 First i want to thank: 
@@ -36,8 +35,11 @@ The serial output of my Gicar is inverted. This needs to be taken into account i
 Additionally, I use a level converter for 5V to 3.3V for the ESP. I am using a relatively expensive ADUM1201, but every cheap 1$ TTL logic level converter chip would also do the job. 
 
 ## Software 
-The data is streamed in when the ESP is powered on. I am splitting the data as mentioned in the reddit post and sending it to the Mqtt. 
+Please read through the code if you want to use this project for yourselves. The code is made with vscode and the platfromio addon. There are a few things you have to change: Wifi Password, Wifi SSID, MQTT IP. 
+
+The data is streamed in when the ESP is powered on. I am splitting the data with the ESP and sending it to the Mqtt Server. 
 If you want to check the pump with a reed sensor i have added the option in Software on pin14. The data is read every 100ms and send. So there is a error of 200ms if that concerns. In the end i have not added the reed sensor since the flag option also sendes when the pump SSR is powerd. 
+Please read trough the 
 
 ## Schematic
 The OKI-78SR family comes pin compatible to a 7805 but without the need of capacitors and much more efficent. So i choose a 3.3V variant for the project.
@@ -49,10 +51,6 @@ I always recommend soldering the final product and, in the case of the coffee ma
 
 ![Geschrumpft](https://github.com/zierroff/MQTT-MaraX/assets/62383514/a9bb527d-67de-4b38-9809-fa05bf41bf46)
 ![Gelötet](https://github.com/zierroff/MQTT-MaraX/assets/62383514/60cab6ab-3eca-4c20-b1ef-c46dba14e6d4)
-
-## To Do
-* Will add a fritzing
-* Clean the code
 
 
 
