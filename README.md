@@ -17,18 +17,18 @@ An ESP requires either 3.3V or 5V as a power supply. Caution: The 5V available a
 
 This is the part inside the machine:
 
-<img src="https://github.com/zierroff/MQTT-MaraX/assets/62383514/46ae73fe-fe88-4b1a-ac53-1d6c4af69dda" width="40%" >
+<img src="https://github.com/zierroff/MQTT-MaraX/blob/main/pictures/Gicar1.jpg" width="40%" >
 
 When opened, it looks like this:
 
-![Gicar3](https://github.com/zierroff/MQTT-MaraX/assets/62383514/5e4ed34f-6f2e-483c-9344-36140b5a0fb9)
+![Gicar3](https://github.com/zierroff/MQTT-MaraX/blob/main/pictures/Gicar3.jpg)
 
 There are 2 circuit boards: The one on the right with the power supply for 230V to 12V and the relays. The one on the left with the control system and a linear regulator for 12V to 5V. The linear regulator used is an LM7805 in a DPAK package. An ESP can require up to 500mA with Wifi enabled, and the regulator gets too hot and fails.
 
 However, the power supply on the right board is designed for more. It also needs to drive the relays. Therefore, I soldered 2 wires to the capacitor of the 12V power supply. These 2 solder joints can be quickly removed if necessary. The wires are passed through the hole because it fit better into the Gicar's enclosure. They are then converted to 3.3V for the ESP using an OKI-78SR-3.3 power supply.
 
 Here the solder points can be seen: 
-![Gicar4](https://github.com/zierroff/MQTT-MaraX/assets/62383514/1d9ff8aa-7775-4612-8bc1-92e7dae573ac)
+![Gicar4](https://github.com/zierroff/MQTT-MaraX/blob/main/pictures/Gicar4.jpg)
 
 ## Serial output reading:
 The serial output of my Gicar is inverted. This needs to be taken into account in the ESP software.
@@ -45,12 +45,12 @@ Please read trough the
 The OKI-78SR family comes pin compatible to a 7805 but without the need of capacitors and much more efficent. So i choose a 3.3V variant for the project.
 The LLC should be connected to Pin 3 and 4 on the Gicar. (Starting with pin1).
 
-![Untitled Sketch_Steckplatine](https://github.com/zierroff/MQTT-MaraX/assets/62383514/bc0cf22f-4fcf-41c7-9031-aee01c405382)
+![Untitled Sketch_Steckplatine](https://github.com/zierroff/MQTT-MaraX/blob/main/pictures/fritzing.jpg)
 
 I always recommend soldering the final product and, in the case of the coffee machine, shrinking it. Breadboards are not a good choice for long-term use.
 
-![Geschrumpft](https://github.com/zierroff/MQTT-MaraX/assets/62383514/a9bb527d-67de-4b38-9809-fa05bf41bf46)
-![Gelötet](https://github.com/zierroff/MQTT-MaraX/assets/62383514/60cab6ab-3eca-4c20-b1ef-c46dba14e6d4)
+![solder](https://github.com/zierroff/MQTT-MaraX/blob/main/pictures/shrink.jpg)
+![shrink](https://github.com/zierroff/MQTT-MaraX/blob/main/pictures/solder.jpg)
 
 
 
