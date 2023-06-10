@@ -1,6 +1,9 @@
 # MQTT-MaraX
 
 It is important to know when the coffee generator is sufficiently heated for extraction. Additionally, one doesn't want to get up, so the whole setup needs to be wireless.
+![PXL_20230408_190545692](https://github.com/zierroff/MQTT-MaraX/assets/62383514/facb346e-c6da-4266-a8fd-34ff4da62c74)
+
+
 
 ## Resources for the project
 First i want to thank: 
