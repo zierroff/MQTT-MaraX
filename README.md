@@ -33,7 +33,7 @@ Here the solder points can be seen:
 
 ## Serial output reading:
 The serial output of my Gicar is inverted. This needs to be taken into account in the ESP software.
-Additionally, I use a level converter for 5V to 3.3V for the ESP. I am aware that many people omit this step. I am using a relatively expensive ADUM1201, but every cheap 1$ TTL logic level converter chip would also do the job. 
+Additionally, I use a level converter for 5V to 3.3V for the ESP. I am using a relatively expensive ADUM1201, but every cheap 1$ TTL logic level converter chip would also do the job. 
 
 ## Software 
 The data is streamed in when the ESP is powered on. I am splitting the data as mentioned in the reddit post and sending it to the Mqtt. 
