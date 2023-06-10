@@ -10,7 +10,7 @@ First i want to thank:
 * [marax_monitor](https://github.com/bancbanus/marax_monitor) 
 * [marax_timer](https://github.com/alexrus/marax_timer)
 * https://www.reddit.com/r/Coffee/comments/hfsvep/data_visualisation_lelit_marax_mod/
-* [marax_timer] https://github.com/michelhe/pimp-my-marax
+* [marax_timer](https://github.com/michelhe/pimp-my-marax)
 
 ## Power supply:
 In the old building where the machine is supposed to be placed, power outlets are scarce. Therefore, I am using the one built into the machine.
