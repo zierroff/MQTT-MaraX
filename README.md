@@ -2,7 +2,7 @@
 
 It is important to know when the coffee generator is sufficiently heated for extraction. Additionally, one doesn't want to get up, so the whole setup needs to be wireless. 
 The temperature is read using an ESP8266 and sent to an MQTT server. In my case a Raspi with a docker mosquitto. The analog device is also an Wifi enabled ESP and retrieves the data from the MQTT server.
-![PXL_20230408_190545692](https://github.com/zierroff/MQTT-MaraX/assets/62383514/facb346e-c6da-4266-a8fd-34ff4da62c74)
+![PXL_20230408_190545692](https://github.com/zierroff/MQTT-MaraX/blob/main/pictures/complete.jpg)
 
 ## Resources for the project
 First i want to thank: 
