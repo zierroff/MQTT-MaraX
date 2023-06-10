@@ -12,14 +12,13 @@ First i want to thank:
 * [marax_timer](https://github.com/alexrus/marax_timer)
 * https://www.reddit.com/r/Coffee/comments/hfsvep/data_visualisation_lelit_marax_mod/
 
-## 
-
 ## Power supply:
 In the old building where the machine is supposed to be placed, power outlets are scarce. Therefore, I am using the one built into the machine.
-
 An ESP requires either 3.3V or 5V as a power supply. Caution: The 5V available at the MaraX control unit should NOT be used!
 
 This is the part inside the machine:
+
+<img src="https://github.com/zierroff/MQTT-MaraX/assets/62383514/46ae73fe-fe88-4b1a-ac53-1d6c4af69dda" width="60%" >
 
 When opened, it looks like this:
 
